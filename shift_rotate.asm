@@ -1,11 +1,11 @@
 ;File		shift_rotate
 ;Version	V1.0
 ;Date		October 10,2021
-; 			These work on both the normal Z80 and the Game Boy unless otherwise noted.
-;			VASM says RLD and RRD don't exist on gameboy... I thought they did???
+; 		THESE ROUTINES DO NOT WORK ON GAME BOY OR GAME BOY COLOR
+;			
 
-;Content	RRCA_RANGE - rotates a range of memory, e.g. &1000 = &23,&45,&67,&89 > &89,&23,&45,&67
-;			RLCA_RANGE - rotates a range of memory, e.g. &1000 = &23,&45,&67,&89 > &45,&67,&89,&23	(bugged, doesn't work)
+;Content		RRCA_RANGE - rotates a range of memory, e.g. &1000 = &23,&45,&67,&89 > &89,&23,&45,&67
+;			RLCA_RANGE - rotates a range of memory, e.g. &1000 = &23,&45,&67,&89 > &45,&67,&89,&23	
 ;			ShowPackedBCD_FromHL - Displays (HL) as a packed BCD byte to the screen. Non-destructive.
 ;Sample Usage
 
