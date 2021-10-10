@@ -26,7 +26,7 @@ RRCA_RANGE:
 loop_RRCA_RANGE_FIRST:
 		RRD
 		INC HL
-		z_djnz loop_RRCA_RANGE_FIRST
+		DJNZ loop_RRCA_RANGE_FIRST
 	pop bc
 	pop hl
 	push hl
@@ -34,7 +34,7 @@ loop_RRCA_RANGE_FIRST:
 loop_RRCA_RANGE_SECOND:
 		RRD
 		INC HL
-		z_djnz loop_RRCA_RANGE_SECOND
+		DJNZ loop_RRCA_RANGE_SECOND
 	pop bc
 	pop hl
 	RRD
@@ -49,7 +49,7 @@ RLCA_RANGE:
 loop_RLCA_RANGE_FIRST:
 		RLD
 		DEC HL
-		z_djnz loop_RLCA_RANGE_FIRST
+		DJNZ loop_RLCA_RANGE_FIRST
 	pop bc
 	pop hl
 	push hl
@@ -57,7 +57,7 @@ loop_RLCA_RANGE_FIRST:
 loop_RLCA_RANGE_SECOND:
 		RLD
 		DEC HL
-		z_djnz loop_RLCA_RANGE_SECOND
+		DJNZ loop_RLCA_RANGE_SECOND
 	pop bc
 	pop hl
 	RLD
