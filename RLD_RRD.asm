@@ -48,7 +48,7 @@ RLCA_RANGE:
 loop_RLCA_RANGE_FIRST:
 		RLD				;ON GAMEBOY, USE "CALL GB_RLD" (SEE GB_RLD_RRD.ASM)
 		DEC HL
-		z_djnz loop_RLCA_RANGE_FIRST
+		DJNZ loop_RLCA_RANGE_FIRST
 	pop bc
 	pop hl
 	push hl
@@ -56,7 +56,7 @@ loop_RLCA_RANGE_FIRST:
 loop_RLCA_RANGE_SECOND:
 		RLD
 		DEC HL
-		z_djnz loop_RLCA_RANGE_SECOND
+		DJNZ loop_RLCA_RANGE_SECOND
 	pop bc
 	pop hl
 	RLD
